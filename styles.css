@@ -1,0 +1,129 @@
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* General page styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+/* Top container for input + add button */
+#container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 8px rgba(255,126,95,0.4);
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Search + Filter row */
+#search, #filter {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+#search:focus, #filter:focus {
+  border-color: #feb47b;
+  box-shadow: 0 0 8px rgba(254,180,123,0.4);
+}
+
+#filter {
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Place search + filter side by side */
+#search, #filter {
+  flex: 1;
+  max-width: 250px;
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Task list styling */
+#tasklist {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#tasklist div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+#tasklist div:hover {
+  transform: scale(1.02);
+}
+
+/* Task text */
+#tasklist p {
+  flex: 1;
+  margin: 0 12px;
+  font-size: 16px;
+}
+
+/* Completed task style */
+.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Counter */
+#counter {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #444;
+}
